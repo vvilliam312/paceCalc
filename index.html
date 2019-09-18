@@ -4,6 +4,7 @@
  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 </head>
+
     <div class="input-group">
         <div class="input-group-prepend">
           <span class="input-group-text" id="">Hours/min/sec</span>
@@ -18,9 +19,11 @@
           <span class="input-group-text" id="">Kilometers</span>
         </div>
         <input id="km" type="text" class="form-control" placeholder="Kilometers">
-        
+        <input id="result" type="hidden" class="form-control">
       </div>
-<button onclick="calc()">Calc</button>
-<script src="./script/script.js"></script>
+<button class="btn btn-primary" onclick="calc()">Calculate</button>
+<button class="btn btn-secondary" onclick="reset()">Reset</button>
+<script src="./script/script.js">
+</script>
 </body>
 </html>
