@@ -1,8 +1,26 @@
 <html>
 <body>
+<head>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+</head>
+    <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="">Hours/min/sec</span>
+        </div>
+        <input id="hour" type="text" class="form-control" placeholder="Hours">
+         <input id="min" type="text" class="form-control" placeholder="Minutes">
+        <input id="sec" type="text" class="form-control" placeholder="Seconds">
+      </div>
 
-
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="">Kilometers</span>
+        </div>
+        <input id="km" type="text" class="form-control" placeholder="Kilometers">
+        
+      </div>
+<button onclick="calc()">Calc</button>
 <script src="./script/script.js"></script>
 </body>
 </html>
