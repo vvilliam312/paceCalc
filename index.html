@@ -2,7 +2,10 @@
 <body>
 <head>
  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+ <script
+ src="https://code.jquery.com/jquery-3.4.1.min.js"
+ integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+ crossorigin="anonymous"></script>
 </head>
 
     <div class="input-group">
@@ -19,8 +22,22 @@
           <span class="input-group-text" id="">Kilometers</span>
         </div>
         <input id="km" type="text" class="form-control" placeholder="Kilometers">
-        <input id="result" type="hidden" class="form-control">
+        <!-- <select id="" name="leaveCode">
+                <option value="10">50m</option>
+                <option value="11">100m</option>
+                <option value="14">200m</option>
+                <option value="17">300m</option>
+                <option value="10">400m</option>
+                <option value="11">500m</option>
+                <option value="14">600m</option>
+                <option value="17">700m</option>
+                <option value="10">800m</option>
+                <option value="11">900m</option>
+              </select> -->
+              
       </div>
+      
+        <input id="result" class="form-control">
 <button class="btn btn-primary" onclick="calc()">Calculate</button>
 <button class="btn btn-secondary" onclick="reset()">Reset</button>
 <script src="./script/script.js">

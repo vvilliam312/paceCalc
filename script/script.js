@@ -1,69 +1,81 @@
 // console.log("WORKS");
 
-var kilometers="";
-
+var kilometers;
+var meter;
 
 var h;
 var m;
 var s;
+var a;
+
+var hour = 0;
+var mins = 0;
+var seconds = 0;
 
 
-var resM;
-var resH;
-var resS;
 
-function calc(){
-kilometers=document.getElementById("km").value; 
-h=document.getElementById("hour").value;
-m=document.getElementById("min").value;
-s=document.getElementById("sec").value;
+function calc() {
+    kilometers = document.getElementById("km").value;
+    h = document.getElementById("hour").value;
+    m = document.getElementById("min").value;
+    s = document.getElementById("sec").value;
 
+    
 
-emptyInp();
-calcTime();
+    
+    emptyInp();
+    calcTime();
+    var x= pace();
+     console.log(x );
 }
 
 
 
+    // if (result >= 3600) {
+    //     hour++;
+    // }
+    // if (result >= 60) {
+    //     mins++;
 
-function calcTime(){
-    console.log(kilometers +" kilometers");
-    console.log(h+" hours "+m  +" minutes "+ s +" seconds" );
-   
-    if(h>=1){
-    resH=Math.floor(60*(60*h));
-        // console.log("HOURS TO MIN = "+ resH);
-       }
-
-    if(m>=1){
-resM=Math.floor(60*m);
- 
-//  console.log("Minutes To SEC = "+ resM);
-}
-if(s>=1){
-    resS=Math.floor(1*s);
+    // }
+    // if (result >= 1) {
+    //     seconds++;
+    // }
+    // console.log("hours: " + hour + " minutes: " + mins + " seconds: " + seconds);
      
-    //  console.log("Minutes To SEC = "+ resS);
-    }
 
 
-var result =resH+resM+resS;
-console.log(result +" Seconds");
+function calcTime() {
+
+    // console.log(meter +" meter");
+    console.log(h+" hours "+m  +" minutes "+ s +" seconds" );
+
+    var result = h;
+   
+}
+
+
+function pace(){
+    var toSec = h * 3600 + m * 60 + s * 1;
+    var toMin=toSec*60;
+    var meter = kilometers;
+
+    var c= toSec/kilometers/60;
+ var d= parseInt((c%1).toFixed(4)*60);
+ var e=parseInt(c);
+$("#result").val(e +" min " + d + " sek")
+ return e +" min " + d + " sek";
 }
 
 
 
 
-
-
-
-function emptyInp(){
-    if(document.getElementById("km").value == ""){
+function emptyInp() {
+    if (document.getElementById("km").value == "") {
         alert("Something is EMPTY");
-    } 
+    }
 }
-function reset(){
+
+function reset() {
     location.reload();
 }
-
-
