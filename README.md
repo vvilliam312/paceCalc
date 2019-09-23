@@ -4,4 +4,4 @@
 3. gör inputs för tiden och buttons
 4. få inputsen att console.loga det värde som de har i sig
 5. Gör en function som räknar h till sek och minuter till sekunder
-6. hidden
+6. gör en function som räknar hur länge det tar att springa tempo (min per/km)
